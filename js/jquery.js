@@ -1,4 +1,6 @@
-var height = $('#header-fixe').height();
+
+$(document).ready(function(){
+    var height = $('#header-fixe').height();
 $ (window).scroll(function(){
     if($(this).scrollTop() > height){
         $('#header-fixe') .addClass('fixed');
@@ -7,4 +9,13 @@ $ (window).scroll(function(){
     else{
         $('#header-fixe') .removeClass('fixed')
     }
-})
+});
+
+
+  $(".menu-toogle-btn").click(function(){
+    $(".dropdown-memu ").toggleClass("toogle-btn");
+  });
+
+
+
+});
